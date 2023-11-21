@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
+
+</head>
+
+<body>
+    
+    <header style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <a href="#" class="logo">iElect</a>
+
+      <div class="search-container">
+  <input type="text" class="search-input" placeholder="Enter a candidate,party or election name to search...">
+  <div class="search-icon">&#128269;</div>
+</div>
+
+<div class="profile-section">
+    <img id="profile-avatar" class="profile-avatar" alt="User Avatar">
+    <span class="profile">profile</span><br>
+    <span class="profile" id="profile-username"></span>
+</div>
+
+    </header>
+    <hr>
+
+    <section class="home" id="home"> 
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <h2 class="elect">Elections</h2>
+        <ol>
+            <a href="elections.html">Presidential</a>.
+            <li>Governorship</li>
+            <li>Senatorial</li>
+            <li>HOR</li>
+            <li>HOA</li>
+            <li>Councillor</li>
+        </ol>
+
+      </nav>
+
+      <div class="main">
+        <div class="main1">
+        <div class=""><span class="Sign3" id="welcome-message"></span>
+
+        <p class="Sign2">Keep track of the election happenings in the country with ease</p> </div>
+
+       <!---- <button id="toggleButton" onclick="toggleList()">Abia State</button> -->
+    
+      </div>
+
+        <div class="Counts">
+        <div class="counts">
+            <h6 class="number">93469008</h6>
+            <h6 class="number">Registered Voters</h6>
+        </div>
+        <div class="counts">
+            <h6 class="number">176846</h6>
+            <h6 class="number">Polling Units</h6>
+        </div>
+        <div class="counts">
+            <h6 class="number">19</h6>
+            <h6 class="number">Political parties</h6>
+        </div>
+        <div class="counts">
+            <h6 class="number">APC</h6>
+            <h6 class="number">Leading party</h6>
+        </div>
+
+    </div>
+
+        
+      <nav class="navbar2">
+        <a href="#comment-section" class="actives" onclick="scrollToComment()">Election board</a>
+
+        <a href="update.html" class="actives">Live Updates</a>
+
+        <a href="#services" class="actives">Blogs</a>
+
+      </nav>
+     
+      <div class="comment" id="comment-section" >
+        <div class="over">
+        <h1 class="Over">Overview</h1>
+        <p class="Signd">This overview is updated from time to time for easy tracking </p>
+        
+
+        </div>
+
+        
+        <div class="Party">
+            <h1 class="Over">Contestant and party</h1>
+            <p class="Signd">Thiz is a list of all contesting parties and their contestants</p>
+            <div class="contestants">
+                <img src="Images/tinubu.jpeg" alt="Tinubu">
+                <div class="details">
+                    <h1 class="Over">APC</h1>
+                    <p class="Signd">Chief Bola Ahmed Tinubu</p>
+                </div>
+            </div>
+            <div class="contestants">
+                <img src="Images/Atiku-Abubakar-1.jpg" alt="Atiku Abubakar">
+                <div class="details">
+                    <h1 class="Over">PDP</h1>
+                    <p class="Signd">Atiku Abubakar</p>
+                </div>
+            </div>
+            <div class="contestants">
+                <img src="Images/Peter-Obi.jpg" alt="Peter Gregory Obi">
+                <div class="details">
+                    <h1 class="Over">LP</h1>
+                    <p class="Signd">Peter Gregory Obi</p>
+                </div>
+            </div>
+            <div class="contestants">
+                <img src="Images/Rabiu-Kwankwaso.jpeg" alt="Rabiu Musa Kwankwaso">
+                <div class="details">
+                    <h1 class="Over">NNPP</h1>
+                    <p class="Signd">Rabiu Musa Kwankwaso</p>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+
+       
+
+    </section>
+
+    <div class="bottom">
+        <a href="#">Settings</a>
+        <a href="#">Dark mode</a>
+        <a href="#page1.html">Sign out</a>
+      </div>
+
+     
+<script src="JS/script.js"></script>
+
+</body>
+</html>

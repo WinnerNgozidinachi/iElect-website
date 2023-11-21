@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="steps">
+    <img class="nigeria" src="Images/pexels-emmanuel-ikwuegbu-8445454.jpg" alt="Illustration"> 
+    <div id="page1">
+        <h5 class="step">Step 1/4</h5>
+        <h1>Welcome to iElect, select an avatar and name to continue</h1>
+        <div class="avatar-link">
+            <img class="avatar" src="Images/Avatar1.png" alt="Avatar 1" onclick="selectAvatar('Images/Avatar1.png')">
+            <img class="avatar" src="Images/Avatar2.png" alt="Avatar 2" onclick="selectAvatar('Images/Avatar2.png')">
+            <img class="avatar" src="Images/Avatar3.png" alt="Avatar 3" onclick="selectAvatar('Images/Avatar3.png')">
+            <img class="avatar" src="Images/Avatar4.png" alt="Avatar 4" onclick="selectAvatar('Images/Avatar4.png')">
+            <img class="avatar" src="Images/Avatar5.png" alt="Avatar 5" onclick="selectAvatar('Images/Avatar5.png')">
+            <img class="avatar" src="Images/Avatar6.png" alt="Avatar 6" onclick="selectAvatar('Images/Avatar6.png')">
+        </div>
+        <p class="name">Name</p>
+        <div class="input-container">
+            <i class="far fa-user"></i>
+            <input type="text" id="username" name="username" placeholder="e.g John Doe" required>
+        </div>
+        <h5 class="Terms">By clicking on continue, you agree to iElect's <span class="term">Terms of Service</span> and <span class="term">Privacy Policy</span></h5>
+        <button type="button" id="nextButton" onclick="saveAndNavigate()">Next</button>
+
+        <p class="sign">Already have an account? <a href="SignIn.html" class="sign1">Sign In</a></p>
+    </div>
+</section>
+
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
